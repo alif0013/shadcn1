@@ -1,4 +1,4 @@
-
+import { FcGoogle } from 'react-icons/fc';
 import { Button } from "@/components/ui/button"
 import {
     Card,
@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
     return (
         <div className='mt-[100px] md:w-[1200px] mx-auto'>
-         
+
 
 
             <div>
@@ -29,7 +29,7 @@ const Login = () => {
                     <CardContent>
                         <form>
                             <div className="grid w-full items-center gap-4">
-                               
+
                                 <div className="flex flex-col space-y-1.5">
                                     <Label htmlFor="email">Email Address</Label>
                                     <Input id="email" placeholder="Eamil Address " />
@@ -40,7 +40,7 @@ const Login = () => {
                                     <Input id="password" placeholder="password " />
                                     <p className="text-blue-900"><Link to="/login">Forgot password?</Link> </p>
                                 </div>
-                                
+
                             </div>
                         </form>
                     </CardContent>
@@ -49,10 +49,18 @@ const Login = () => {
 
                     </CardFooter>
 
-                <div className="text-center pb-6">
-                    <p>Logigig</p>
-                </div>
+                    <CardFooter>
+                        <p>Not registered? <Link className='text-blue-900' to="/register">Create an account</Link></p>
+                        
+                    </CardFooter>
                     
+                    <CardFooter>
+                        <Button variant="outline" className='w-full '>
+                            <FcGoogle className='mr-4'></FcGoogle>
+                            Log In With Google
+                        </Button>
+                    </CardFooter>
+
                 </Card>
             </div>
         </div>

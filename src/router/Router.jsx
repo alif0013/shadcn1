@@ -1,6 +1,7 @@
 import Blog from '@/Pages/Blog/Blog';
 import Home from '@/Pages/Home/Home';
 import Products from '@/Pages/Products/Products';
+import Register from '@/Pages/Register/Register';
 import Login from '@/Pages/login/Login';
 import MainLayout from '@/layouts/MainLayout';
 import { createBrowserRouter } from 'react-router-dom';
@@ -25,6 +26,10 @@ const myCreatedRoutes  = createBrowserRouter([
             {
                 path: '/login',
                 element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             }
         ]
     }
