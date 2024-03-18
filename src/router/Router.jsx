@@ -1,4 +1,5 @@
 import Blog from '@/Pages/Blog/Blog';
+import Contact from '@/Pages/Contact/Contact';
 import Home from '@/Pages/Home/Home';
 import Products from '@/Pages/Products/Products';
 import Register from '@/Pages/Register/Register';
@@ -22,6 +23,10 @@ const myCreatedRoutes  = createBrowserRouter([
             {
                 path: '/products',
                 element: <Products></Products>,
+            },
+            {
+                path: '/contact',
+                element: <Contact></Contact> ,
             },
             {
                 path: '/login',
