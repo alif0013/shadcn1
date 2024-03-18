@@ -15,10 +15,9 @@ import { Link } from "react-router-dom";
 
 
 const Login = () => {
+    
     return (
         <div className='mt-[100px] md:w-[1200px] mx-auto'>
-
-
 
             <div>
                 <Card className="w-[350px] mx-auto drop-shadow-md hover:drop-shadow-sm">
